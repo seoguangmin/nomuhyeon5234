@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no" />
+	<!-- 로딩속도 향상을 위해 css, html, javascript 순으로 작성! 
+		https://ide.c9.io/eaea2121/eas // 관리자 주소
+		eaea2121@nate.com // 계정
+		`12ec~!@EC // 비밀번호
+		node -"ubuntu@eaea2121@nate.com" // 실행 창
+		nodemon index.js // 시작
+		^C (Ctrl + C)    // 종료
+		아니면.. 위에 초록색 재생버튼 Run 누르시면 될거에요
+		아래의 bash -
+		nodemon index.js 
+		http://eas-eaea2121.c9users.io
+			@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css'); 
+			html, body, h1, h2, h3, h4, h5, h6, li, p {font-family:'Nanum Gothic';}
+			http://goyang.go.kr/kr/intro/sub03/09/index2.jsp 고양체 쓰구싶다.. 
+			
+				font-family:'Nanum Gothic';
+				font-family:'Hanna'; 
+				
+				font-family: 'Nanum Pen Script', cursive;
+		-->
+	<link rel="stylesheet" href="/index.css" type="text/css" ></link> 
+</HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<BODY onload="init()" onchange="dropfile();">
+	<div class="background">
+	</div>
+	
+	<input type="text" id="audiofile" size="80" value="demo.mp3" style="display:none;" />
+	<audio controls src="http://dl.bgms.kr/download/2PHIK/mp3/katalk" id="katalk" style="display:none;" />
+	<input id="file" class="file" multiple="multiple" type="file" name="filename[]" onchange="dropfile();" style="display:none;" />
+		
+		
+	<script src="http://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type='application/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js'></script>
+	
+	<script type="text/javascript" src="/index.js"></script>
+</BODY>
+
+</HTML>
